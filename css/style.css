@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "chalet";
+  src: url("../fonts/Chalet.eot") format("eot"),
+    url("../fonts/Chalet.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Chalet.woff") format("woff"),
+    url("../fonts/Chalet.ttf") format("truetype"),
+    url("../fonts/Chalet.svg#chalet") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  margin: 5px 0;
+}
+
+header ul {
+  list-style: none;
+}
+
+header li {
+  display: inline-block;
+  position: relative;
+  margin: 5px 20px;
+  font-size: 1.3em;
+}
+
+header li:hover {
+  opacity: 0.6;
+}
+
+#first-section {
+  font-family: chalet;
+  text-align: center;
+}
+
+#form-personas,
+#form-fecha,
+#form-email,
+#form-password,
+#form-reserva,
+select {
+  width: 70%;
+  margin: 10px auto;
+  border: 2px solid #457878;
+  border-radius: 12px;
+  display: block;
+  padding: 8px 5px;
+}
+
+#form-btn {
+  padding: 8px 5px;
+  color: #fff;
+  background-color: aquamarine;
+  border: none;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+#form-btn:hover {
+  padding: 8px 5px;
+  color: #fff111;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#personal-information-section,
+#laboral-information-section {
+  display: flex;
+  font-family: chalet;
+}
+
+#title-personal-information,
+#title-laboral-information,
+#title-skills-information,
+#personal-information-section h3,
+#laboral-information-section h3 {
+  text-align: center;
+  color: #4a4e69;
+}
+
+#first-personal-information-section,
+#second-personal-information-section,
+#first-laboral-information-section,
+#second-laboral-information-section {
+  width: 50%;
+  flex-grow: 1;
+  padding: 20px;
+  margin: 5px;
+  border: 1px solid lightgray;
+}
+
+#first-personal-information-section span,
+#second-personal-information-section span,
+#first-skills-information-section span,
+#first-laboral-information-section span,
+#second-laboral-information-section span {
+  margin: 5px;
+  color: #9a8c98;
+  vertical-align: 5px;
+}
+
+#first-personal-information-section i,
+#second-personal-information-section i,
+#first-laboral-information-section i,
+#first-skills-information-section i,
+#second-laboral-information-section i {
+  color: #22223b;
+  font-size: 2em;
+}
+
+#first-personal-information-section div,
+#second-personal-information-section div,
+#first-laboral-information-section div,
+#second-laboral-information-section div {
+  margin: 10px auto;
+}
+
+@media (max-width: 730px) {
+  #personal-information-section,
+  #laboral-information-section {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 380px) {
+  #main-section-profile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #first-internal-section-profile,
+  #second-internal-section-profile {
+    width: 70%;
+    text-align: center;
+  }
+  #first-personal-information-section div,
+  #second-personal-information-section div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+}
